@@ -76,7 +76,6 @@ function initFormHandler() {
 		e.preventDefault();
 		// B4. TODO - Create a new FormData object from the <form> element reference above
 		const formData = new FormData(form);
-		console.log(formData.get("imgSrc"));
 		// B5. TODO - Create an empty object (we'll refer to this object as recipeObject to
 		//            make this easier to read), and then extract the keys and corresponding
 		//            values from the FormData object and insert them into recipeObject
@@ -91,7 +90,6 @@ function initFormHandler() {
 	    	"lengthTime": formData.get("lengthTime"),
 	    	"ingredients": formData.get("ingredients")
 		};
-		console.log(recipeObject);
 		// B6. TODO - Create a new <recipe-card> element
 		const recipeCard = document.createElement('recipe-card')
 		// B7. TODO - Add the recipeObject data to <recipe-card> using element.data

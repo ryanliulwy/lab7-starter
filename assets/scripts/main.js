@@ -73,6 +73,7 @@ function initFormHandler() {
 	//            submit button is clicked
 	// Steps B4-B9 will occur inside the event listener from step B3
 	form.addEventListener('submit', e => {
+		e.preventDefalut();
 		// B4. TODO - Create a new FormData object from the <form> element reference above
 		const formData = new FormData(form);
 		console.log(formData.get("imgSrc"));
